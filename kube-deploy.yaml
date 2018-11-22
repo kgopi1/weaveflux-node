@@ -13,8 +13,6 @@ spec:
       containers:
       - name: node-redis
         image: hegde9/node-redis
-         args:
-        - -msg=Ahoyy
         ports:
         - containerPort: 8000
           protocol: TCP
