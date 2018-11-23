@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
       - name: node-http
-        image: hegde9/node-http
+        image: your_image_path
         ports:
         - containerPort: 8001
           protocol: TCP
