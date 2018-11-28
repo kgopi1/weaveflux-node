@@ -18,4 +18,4 @@ spec:
           protocol: TCP
         env:
         - name: msg
-          value: "hello from fresco"
+          value: "hello from fresco   "
