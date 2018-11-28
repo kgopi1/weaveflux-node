@@ -9,8 +9,4 @@ spec:
       targetPort: 8001
       nodePort: 30080
   selector:
-<<<<<<< HEAD
     app: node-http
-=======
-    app: node-http
->>>>>>> 8d2f341e570523811a7512f48bb54ae472b2f118
