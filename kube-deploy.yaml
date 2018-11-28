@@ -17,5 +17,5 @@ spec:
         - containerPort: 8001
           protocol: TCP
         env:
-          - name: msg
-            value: "hello from nodejs!!!!!"
+        - name: msg
+          value: "hello from fresco"
