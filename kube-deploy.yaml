@@ -17,4 +17,4 @@ spec:
         - containerPort: 8001
           protocol: TCP
         args:
-          - "hello from nodeJs"
+          - "hello from nodeJs!!"
