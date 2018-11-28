@@ -9,4 +9,4 @@ spec:
       targetPort: 8001
       nodePort: 30080
   selector:
-    name: node-http
+    app: node-http
