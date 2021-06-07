@@ -1,21 +1,24 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: node-http
+  creationTimestamp: null
+  labels:
+    app: node-http
+  name: node2-http
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: node-http
+  strategy: {}
   template:
     metadata:
+      creationTimestamp: null
       labels:
         app: node-http
-        version: v1
     spec:
       containers:
-      - name: node-http
-        image: hegde9/node-http:latest
-        ports:
-        - containerPort: 8001
-          protocol: TCP
-        env:
-        - name: msg
-          value: "hello from fresco   "
+      - image: kgopi1/fluxlab:latest
+        name: node-http
+        resources: {}
+status: {}
